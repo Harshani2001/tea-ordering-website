@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('back.jpg.jpg'); /* Replace with your image */
+  background-size: cover;
+  background-attachment: fixed; /* Fixes the background */
+  background-position: center;
+  height: 100vh; /* Full height */
+}
+  #about, #order, #contact {
+    background-color: #f9f9f9;
+  }
+  
+  #products img {
+    border-radius: 8px;
+  }
+  
+  h2 {
+    color: #5b7850;
+    margin-bottom: 1rem;
+  }
+  
+  footer {
+    background-color: #5b7850;
+    color: #fff;
+  }
+  

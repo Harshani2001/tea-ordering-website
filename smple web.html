@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ziggy Naturals</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Ziggy Naturals</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#order">Order</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="text-center text-light d-flex align-items-center">
+    <div class="container">
+      <h1 class="display-4">Ziggy Naturals</h1>
+      <p class="lead">Let us elevate your daily tea ritual 🍃 Embrace a transformation in every sip.</p>
+      <a href="#order" class="btn btn-dark btn-lg">Order Now</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="text-center py-5">
+    <div class="container">
+      <h2>Our Company</h2>
+      <p>Experience the true essence of natural ingredients in every sip of our carefully crafted tea blends.</p>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="text-center py-5 bg-light">
+    <div class="container">
+      <h2>Our Products</h2>
+      <div class="row">
+        <div class="col-md-3">
+          <img src="images/ginger-tea.jpg" class="img-fluid" alt="Ginger Tea">
+          <p>Ginger Tea 🫚</p>
+        </div>
+        <div class="col-md-3">
+          <img src="images/cinnamon-tea.jpg" class="img-fluid" alt="Cinnamon Tea">
+          <p>Cinnamon Tea 🍂</p>
+        </div>
+        <div class="col-md-3">
+          <img src="images/chai-masala.jpg" class="img-fluid" alt="Chai Masala">
+          <p>Chai Masala 🧋</p>
+        </div>
+        <div class="col-md-3">
+          <img src="images/black-tea.jpg" class="img-fluid" alt="Black Tea">
+          <p>Black Tea 🍃</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Order Form Section -->
+<section id="order" class="text-center py-5">
+  <div class="container">
+    <h2>Order Now</h2>
+      
+    <form id="orderForm">
+      <div class="mb-3">
+        <label for="item" class="form-label">Product name</label>
+        <input type="text" id="item" name="item" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="quantity" class="form-label">Quantity</label>
+        <input type="number" id="quantity" name="quantity" class="form-control" min="1" required>
+      </div>
+      <div class="mb-3">
+        <label for="address" class="form-label">Delivery Address</label>
+        <textarea id="address" name="address" class="form-control" rows="3" required></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="payment" class="form-label">Payment Method</label>
+        <select id="payment" name="payment" class="form-select" required>
+          <option value="" disabled selected>Select payment method</option>
+          <option>Credit Card</option>
+          <option>QR Payment</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary btn-lg">Place Order</button>
+    </form>
+  </div>
+</section>
+
+
+  <!-- Feedback Section -->
+  <section id="feedback" class="text-center py-5 bg-light">
+    <div class="container">
+      <h2>Customer Feedback</h2>
+      <p>"A refreshing way to start the day!" – Happy Customer</p>
+      <p>"The flavors are so unique and soothing." – Tea Lover</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="text-center py-5">
+    <div class="container">
+      <h2>Contact Info</h2>
+      <p>Email: info@ziggynaturals.com | Phone: +123 456 7890</p>
+      <p>Address: 123 Tea Garden Lane, Hillside</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-3 bg-dark text-light">
+    <p>&copy; 2024 Ziggy Naturals. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
